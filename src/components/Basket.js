@@ -1,11 +1,21 @@
-const Basket = () => {
-    
-    return(
-        <h1>
-            
-        </h1>
-    )
+import ProductItem from "./ProductItem";
+
+
+const Basket = ({basketItems, onItemClick}) => {
+    const basketItemsArray = basketItems.map((product) => {
+        return <ProductItem product = {product} onItemClick={ onItemClick }/>
+    });
+
+    return (
+
+    <li>
+        {basketItemsArray}
+    </li>
+)
 
 }
+
+
+
 
 export default Basket;

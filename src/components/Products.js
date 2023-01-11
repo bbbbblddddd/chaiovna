@@ -6,6 +6,8 @@ const Products = ({ TeaProducts, onItemClick }) => {
         return <ProductItem product={product} key= {index} onItemClick= {onItemClick} />
     })
 
+    
+
 
     return (
 
